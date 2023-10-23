@@ -5,6 +5,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   background: none;
   position: absolute;
+  width: 100%;
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -49,6 +50,6 @@ export const NavMenu = styled.div`
   /* width: 100vw;
 white-space: nowrap; */
   @media screen and (max-width: 768px) {
-    display: none;
+    // display: none;
   }
 `;
