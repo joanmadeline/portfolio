@@ -1,31 +1,62 @@
-import React from "react";
-import { Nav, NavLink, NavMenu,  Bars }
-    from "./NavbarElements";
+import { React, useEffect, useState} from "react";
+import { Nav, NavLink, NavMenu, MobileNav, MobileLink, MobileMenu, MenuToggle }from "./NavbarElements";
 import logo from "../assets/logo.png";
  
 const Navbar = () => {
+
+    const [isActive, setIsActive] = useState(false);
+
+    const handleMobile = () => {
+        setIsActive(current => !current);
+    }
+
+    useEffect(() => {
+        if (isActive) {
+            document.body.classList.add("overflow-hidden");
+        }
+        else {
+            document.body.classList.remove("overflow-hidden");
+        }
+    }, [isActive]);
+
     return (
         <>
         {/* <div className="container mx-auto px-4 py-20 sm:px-8 md:px-4 lg:px-24 xl:px-40"> */}
             <Nav className="mx-auto px-4 sm:px-8 md:px-4 lg:px-24 xl:px-40">
-                
                 <NavLink to="/"><img src={logo} className="app-logo" alt="logo" /></NavLink>
                 <NavMenu>
-                <   NavLink to="/" activeStyle>
+                    <NavLink to="/" >
                         Home
                     </NavLink>
-                    <NavLink to="/about" activeStyle>
+                    <NavLink to="/about" >
                         About Me
                     </NavLink>
-                    <NavLink to="/projects" activeStyle>
+                    <NavLink to="/projects" >
                         My Projects
                     </NavLink>
-                    <NavLink to="/contact" activeStyle>
+                    <NavLink to="/contact" >
                         Say Hi 👋
                     </NavLink>
                 </NavMenu>
-                {/* <Bars /> */}
             </Nav>
+            <MobileNav className="mx-auto px-4 sm:px-8 md:px-4 lg:px-24 xl:px-40">
+                <NavLink to="/"><img src={logo} className="app-logo" alt="logo" /></NavLink>
+                <MenuToggle onClick={handleMobile} className={isActive ? 'mobileMenu' : ''} />
+                <MobileMenu className={isActive ? 'mobileMenu' : ''}>
+                    <MobileLink to="/" >
+                        Home
+                    </MobileLink>
+                    <MobileLink to="/about" >
+                        About Me
+                    </MobileLink>
+                    <MobileLink to="/projects" >
+                        My Projects
+                    </MobileLink>
+                    <MobileLink to="/contact" >
+                        Say Hi 👋
+                    </MobileLink>
+                </MobileMenu>
+            </MobileNav>
             {/* </div> */}
         </>
     );
