@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <>
         {/* <div className="container mx-auto px-4 py-20 sm:px-8 md:px-4 lg:px-24 xl:px-40"> */}
-            <Nav className="mx-auto px-4 sm:px-8 md:px-4 lg:px-24 xl:px-40">
+            <Nav className="container mx-auto px-10 sm:px-10 md:px-12 lg:px-24 xl:px-40">
                 <NavLink to="/"><img src={logo} className="app-logo" alt="logo" /></NavLink>
                 <NavMenu>
                     <NavLink to="/" >
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </NavLink>
                 </NavMenu>
             </Nav>
-            <MobileNav className="mx-auto px-4 sm:px-8 md:px-4 lg:px-24 xl:px-40">
+            <MobileNav className="container mx-auto px-10 sm:px-10 md:px-12 lg:px-24 xl:px-40">
                 <NavLink to="/"><img src={logo} className="app-logo" alt="logo" /></NavLink>
                 <MenuToggle onClick={handleMobile} className={isActive ? 'mobileMenu' : ''} />
                 <MobileMenu className={isActive ? 'mobileMenu' : ''}>

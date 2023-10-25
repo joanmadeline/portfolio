@@ -12,13 +12,13 @@ const About = () => {
             {/* <div className="container mx-auto"> */}
                 <div className="hero">
                     <div className="home-box px-4 sm:px-8 md:px-4 lg:px-24 xl:px-40">
-                        <h1 className='text-red text-7xl'>MADELINE PONIMAN</h1>
-                        <h2 className='text-white text-5xl font-medium'>FRONTEND DEVELOPER</h2>
+                        <h1 className='text-red text-6xl md:text-7xl'>MADELINE PONIMAN</h1>
+                        <h2 className='text-white text-4xl md:text-5xl font-medium'>FRONTEND DEVELOPER</h2>
                     </div>
                 </div>
             {/* </div> */}
             
-            <div className="container m-auto px-4 py-20 sm:px-8 md:px-4 lg:px-24 xl:px-40 text-center">
+            <div className="container m-auto px-10 py-20 sm:px-10 md:px-12 lg:px-24 xl:px-40 text-center">
                 <div className="grid grid-cols-1 gap-8">
                     <h3 className="heading grid">TOOLING</h3>
 
@@ -35,7 +35,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="container m-auto px-4 pb-20 sm:px-8 md:px-4 lg:px-24 xl:px-40 text-center">
+            <div className="container m-auto px-10 pb-20 sm:px-10 md:px-12 lg:px-24 xl:px-40 text-center">
                 <div className="grid grid-cols-1 gap-8">
                     <h3 className="heading grid">MY WORK</h3>
 

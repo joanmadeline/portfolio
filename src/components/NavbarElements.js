@@ -5,6 +5,8 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   background: none;
   position: absolute;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 100px;
   display: flex;
@@ -34,6 +36,9 @@ export const NavLink = styled(Link)`
   }
   &:hover {
     color: #c32148;
+  }
+  &:first-child {
+    padding-left: 0;
   }
 `;
  
@@ -83,8 +88,7 @@ right: 20px;
 top: 30px;
 height: auto;
 z-index: 9;
-
-transition: transform 0.2s ease-in-out;
+transition: transform 0.4s ease-in-out;
 display: none;
 @media screen and (max-width: 768px) {
   display: block;
@@ -95,7 +99,7 @@ display: none;
   border-bottom: 4px solid #ffffff;
   width: 100%;
   margin-bottom: 5px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 &:after {
   content: "";
@@ -119,9 +123,9 @@ display: none;
 export const MobileNav = styled.nav`
   background: none;
   display: none;
-  // height: 100vh;
-  width: 100vw;
   position: absolute;
+  left: 0;
+  right: 0;
   // padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
   @media screen and (max-width: 768px) {
