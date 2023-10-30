@@ -3,7 +3,7 @@ import React from "react";
 import './home.css';
 import ToolingItem from "../components/ToolingItem";
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { BiLogoJavascript, BiLogoJquery, BiLogoGithub } from "react-icons/bi"
+import { BiLogoJavascript, BiLogoJquery, BiLogoGithub } from "react-icons/bi";
 import { SiRubyonrails, SiAdobephotoshop } from "react-icons/si";
  
 const About = () => {

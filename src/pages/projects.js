@@ -1,6 +1,7 @@
 import React from "react";
+import Project from "../components/project";
 import ToDoList from '../assets/to-do-list.png';
-import './project.css';
+
 // import ToDoListMobile from '../assets/to-do-list-mobile.png';
  
 const Projects = () => {
@@ -15,12 +16,7 @@ const Projects = () => {
                 </div>
 
                 <div className="container m-auto px-10 py-10 sm:px-10 md:px-12 lg:px-24 xl:px-60">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <img src={ToDoList} alt="To Do List Desktop" className="w-96 m-auto md:m-0" />
-                        <div className="text-center md:text-left">
-                            <h2 className="project-title">To Do List</h2>
-                        </div>
-                    </div>
+                    <Project screenshot={ToDoList} name="To Do List" url="https://to-do-list-joanmadeline.vercel.app/" github="https://github.com/joanmadeline/to-do-list" />
                 </div>
             </div>
         </div>
