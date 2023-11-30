@@ -13,7 +13,7 @@ const About = () => {
                 <div className="hero">
                     <div className="home-box px-4 sm:px-8 md:px-4 lg:px-24 xl:px-60">
                         <h1 className='text-red text-6xl md:text-7xl'>MADELINE PONIMAN</h1>
-                        <h2 className='text-white text-4xl md:text-5xl font-medium'>FRONTEND DEVELOPER</h2>
+                        <h2 className='text-white text-4xl md:text-5xl font-medium'>FRONTEND ENGINEER</h2>
                     </div>
                 </div>
             {/* </div> */}
