@@ -1,6 +1,5 @@
 import React from "react";
 import './tooling.css';
-import { Icon } from "react-icons";
 
 
 const ToolingItem = (props) => {
