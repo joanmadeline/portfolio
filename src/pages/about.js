@@ -12,7 +12,7 @@ const About = () => {
             <h1 className="title grid mt-10 md:mt-0 mb-4">About Me</h1>
             <p>
               Hey there, welcome to my little slice of the web! 🌟 I'm the
-              Front End Engineer behind the scenes, turning design dreams into
+              Frontend Engineer behind the scenes, turning design dreams into
               pixel-perfect websites that pop.
             </p>
             <p>
