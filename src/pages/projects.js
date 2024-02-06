@@ -20,7 +20,7 @@ const Projects = () => {
           <Project
             screenshot={WeatherApp}
             name="Weather App"
-            url="#"
+            url="https://weather-app-madelineponiman.vercel.app/"
             github="https://github.com/joanmadeline/weather-app"
           />
           <Project
